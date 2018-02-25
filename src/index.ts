@@ -1,8 +1,9 @@
-class Startup {
-  public static main(): number {
-    console.log('Hello World');
-    return 0;
-  }
-}
+import * as express from 'express';
 
-Startup.main();
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('hello world');
+});
+
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
