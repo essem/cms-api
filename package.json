@@ -2,9 +2,12 @@
   "name": "cms-api",
   "version": "0.0.0",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "lint": "tslint --project tsconfig.json src/**/*.ts"
   },
   "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.7.0",
     "typescript": "^2.7.2"
   }
 }
